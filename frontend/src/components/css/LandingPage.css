@@ -1,0 +1,21 @@
+.landing-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+    background-color: #B8F35C;
+    padding: 4rem;
+    border-radius: .7rem;
+}
+
+.welcome-h1 {
+    font-family: 'Unbounded', cursive;
+    font-weight: 800;
+    font-size: 6rem;
+}
+
+#bolded {
+    font-weight: 100;
+}
