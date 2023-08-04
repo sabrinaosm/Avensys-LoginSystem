@@ -49,7 +49,7 @@ function Navbar() {
             <div class="dropdown">
                 <button class="language-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fi fi-br-language"></i>
-                    Language
+                    {t('Language.1')}
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" onClick={() => handleClick('en')}>English</a>
@@ -57,18 +57,6 @@ function Navbar() {
                     <a class="dropdown-item" onClick={() => handleClick('ko')}>Korean</a>
                 </div>
             </div>
-
-            {/* <div className="btn-group dropleft">
-                <button className="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i className="fi fi-ss-language"></i>
-                    <span> Language</span>
-                </button>
-                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a className="dropdown-item" onClick={() => handleClick('en')}>English</a>
-                    <a className="dropdown-item" onClick={() => handleClick('chi')}>Chinese</a>
-                    <a className="dropdown-item" onClick={() => handleClick('ko')}>Korean</a>
-                </div>
-            </div> */}
         </nav >
     )
 }

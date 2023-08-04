@@ -118,5 +118,8 @@
     },
     "Gender cannot be empty": {
         "1": "性别不能为空。"
+    },
+    "Language": {
+        "1": "语言"
     }
 }

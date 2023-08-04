@@ -22,7 +22,6 @@ function LandingPage() {
           {t('Welcome this is a login and registration system built using Java Springboot React.js and MySQL.1')}
         </h1>
         <p>{t('Feel free to create an account login and test out the system.1')}</p>
-        <p>{t('Click here to retrieve details of the super manager account for testing.1')}</p>
       </div>
     </div>
   )

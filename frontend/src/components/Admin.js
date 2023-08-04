@@ -20,6 +20,68 @@ function Admin() {
       })
   };
 
+  // Delete User Fn
+  const handleDeleteUserClick = (id) => {
+    const confirmDelete = window.confirm('Are you sure you want to delete this user?');
+    if (confirmDelete) {
+      axios.delete(`http://localhost:8085/deleteuser/${id}`)
+        .then((response) => {
+          loadUsers();
+        })
+        .catch((error) => {
+          console.error("Error deleting user account: ", error);
+        })
+    }
+  }
+
+  // Update User Fn
+  const [updatedUser, setUpdatedUser] = useState({
+    id: '',
+    first_name: '',
+    last_name: '',
+    username: '',
+    email: '',
+    gender: '',
+    password: '',
+    created_on: '',
+    manager: false
+  })
+
+  const selectUserForEdit = (user) => {
+    setUpdatedUser({
+      id: user.id,
+      first_name: user.first_name,
+      last_name: user.last_name,
+      username: user.username,
+      email: user.email,
+      password: user.password,
+      gender: user.gender,
+      created_on: new Date(),
+      manager: user.manager,
+    });
+  };
+
+  const handleUserUpdateChange = (e) => {
+    const { name, value } = e.target;
+    setUpdatedUser((prevState) => ({
+      ...prevState,
+      [name]: name === 'manager' ? value === 'true' : value
+    }));
+  };
+
+  const handleUserUpdateSubmit = (e) => {
+    console.log(updatedUser);
+    e.preventDefault();
+    axios.put("http://localhost:8085/updateuser", updatedUser)
+      .then((response) => {
+        setUpdatedUser(response.data);
+        loadUsers();
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+  }
+
   useEffect(() => {
     loadUsers();
     if (user.manager === false) {
@@ -64,22 +126,69 @@ function Admin() {
                     <i class="fi fi-bs-menu-dots"></i>
                   </button>
                   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a className="dropdown-item" href="#">
-                      <i class="fi fi-sr-user-pen"></i>
+                    <a
+                      className="dropdown-item"
+                      data-toggle="modal"
+                      data-target={`#exampleModal${i.user_id}`}
+                      onClick={() => selectUserForEdit(i)}
+                    >
+                      <i className="fi fi-sr-user-pen"></i>
                       <span>Edit Account</span>
-                      
                     </a>
-                    <a className="dropdown-item" href="#">
-                      <i class="fi fi-sr-delete-user"></i>
+
+                    <a className="dropdown-item"
+                      key={user.id}
+                      onClick={() => handleDeleteUserClick(user.id)}>
+                      <i className="fi fi-sr-delete-user"></i>
                       <span>Delete Account</span>
                     </a>
                   </div>
-                </div></td>
+                </div>
+                </td>
               </tr>
             ))
           }
         </tbody>
+        <div className="modal fade" id={`exampleModal${user.user_id}`} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal-dialog" role="document" style={{maxWidth: '100%'}} >
+            <div className="modal-content">
+              <div className="modal-header">
+                <h3 claclassNamess="modal-title" id="exampleModalLabel">Editing User</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body d-flex flex-row justify-content-center align-items-center">
+                <img src={require('./assets/update.png')} />
+                <div className='edit-user'>
+                  <form className='user-update-modal-form'>
+                    <input type='number' className='form-control' name='id' onChange={handleUserUpdateChange} value={updatedUser.id} hidden />
+                    <input type='text' className='form-control' name='first_name' onChange={handleUserUpdateChange} value={updatedUser.first_name} />
+                    <input className='form-control' type='text' name='last_name' onChange={handleUserUpdateChange} value={updatedUser.last_name} />
+                    <input className='form-control' type='text' name='username' onChange={handleUserUpdateChange} value={updatedUser.username} />
+                    <input className='form-control' type='text' name='email' onChange={handleUserUpdateChange} value={updatedUser.email} />
+                    <input className='form-control' type='password' value={updatedUser.password} name='password' onChange={handleUserUpdateChange} />
+                    <select name='gender' onChange={handleUserUpdateChange} value={updatedUser.gender} className='form-control' >
+                      <option selected value="">Select a Gender</option>
+                      <option value="Female">Female</option>
+                      <option value="Male">Male</option>
+                      <option value="Others">Others</option>
+                    </select>
+                    <select name='manager' onChange={handleUserUpdateChange} value={updatedUser.manager} className='form-control'>
+                      <option selected value=''>Select a Role</option>
+                      <option value='true'>Manager</option>
+                      <option value='false'>User</option>
+                    </select>
+                    <input type='text' name='profile_picture' onChange={handleUserUpdateChange} value={updatedUser.profile_picture} hidden />
+                    <button type='button' className='btn btn-outline-primary' data-dismiss="modal" onClick={handleUserUpdateSubmit}>Save Changes</button>
+                    <button type='button' className='btn btn-outline-dark' data-dismiss="modal">Close</button>
+                  </form>
+                </div>
 
+              </div>
+            </div>
+          </div>
+        </div>
 
       </table>
     </div>

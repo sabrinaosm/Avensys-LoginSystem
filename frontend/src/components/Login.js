@@ -70,7 +70,7 @@ function Login() {
                     <h3>{t('Welcome back.1')}</h3>
                     <p>{t('Welcome to the Login Registration System Please enter your account details to begin.1')}</p>
                 </header>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className='d-flex flex-column align-items-center'>
                     <div className="form-group">
                         <label for="username">{t('Username.1')}</label>
                         <input type="username"
@@ -107,7 +107,7 @@ function Login() {
                         </div>
                     )}
                     <div className='form-group'>
-                        <button type="submit" className="btn btn-primary">{t('Login.1')}</button>
+                        <button type="submit" className="btn btn-primary" style={{width: '20rem'}}>{t('Login.1')}</button>
                     </div>
                     <p className='text-center'>{t('Dont have an account yet.1')} <br/>
                     <a href='/register' className='register-link'>{t('Create an account here.1')}</a></p>

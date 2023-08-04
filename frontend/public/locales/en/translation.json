@@ -118,5 +118,8 @@
     },
     "Gender cannot be empty": {
         "1": "Gender cannot be empty."
+    },
+    "Language": {
+        "1": "Language"
     }
 }

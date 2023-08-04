@@ -1,4 +1,5 @@
-h3, h2 {
+h3,
+h2 {
     font-family: 'Unbounded', cursive;
     font-weight: 600;
 }
@@ -10,24 +11,31 @@ h3, h2 {
     row-gap: 1rem;
     flex-direction: column;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 40%;
 }
 
 table {
     height: 70%;
 }
 
-th, td {
+th,
+td {
     padding: .5rem;
     text-align: center;
 }
 
-.edit, .view {
+.edit,
+.view {
     background-color: #B8F35C;
     font-weight: bold;
     border-radius: .7rem;
     padding: .5rem;
     border: none;
     font-size: 13px;
+}
+
+.modal-dialog {
+    width:1250px;
 }
 
 .view {

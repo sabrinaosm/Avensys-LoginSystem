@@ -7,3 +7,23 @@
 table{
     width: 100%;
 }
+
+.dropdown-item {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.user-update-modal-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.form-control, .btn {
+    font-size: 13px;
+}
+
+.form-control {
+    width: 20rem;
+}

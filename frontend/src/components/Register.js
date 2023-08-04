@@ -86,7 +86,7 @@ function Register() {
                     </h3>
                     <p>{t('Begin your journey here and enter your account details to create an account.1')}</p>
                 </header>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className='d-flex flex-column align-items-center'>
                     <div className="form-group">
                         <label for="userName">{t('Username.1')}</label>
                         <input type="text"
@@ -151,8 +151,8 @@ function Register() {
                     )}
 
                     <div className='form-group'>
-                        <label for='gender'>{t('Gender.1')}</label>
-                        <select className="custom-select"
+                        <label for='gender'>{t('Gender.1')}</label><br></br>
+                        <select className="custom-select form-control"
                             id='gender'
                             name='gender'
                             onChange={handleChange}
@@ -193,7 +193,7 @@ function Register() {
                     }
 
                     <div className='form-group'>
-                        <button type="submit" className="btn btn-primary" style={{fontSize: '13px'}}>{t('Create an Account.1')}</button>
+                        <button type="submit" className="btn btn-primary" style={{fontSize: '13px', width: '20rem'}}>{t('Create an Account.1')}</button>
                     </div>
                     <p className='text-center'>{t('Already have an account.1')} <a href='/login' className='login-link'>{t('Login.1')}</a>!</p>
 

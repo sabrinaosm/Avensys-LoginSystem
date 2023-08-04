@@ -118,5 +118,8 @@
     },
     "Gender cannot be empty": {
         "1": "성별은 비워둘 수 없습니다."
+    },
+    "Language": {
+        "1": "언어"
     }
 }
