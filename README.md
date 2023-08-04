@@ -7,7 +7,7 @@ Includes:
   <li>Restricted page accessible only for users with Managerial roles.</li>
 </ul>
 <b>Login Registration Demo</b>
-<div align="center">
+<div>
   <a href="https://www.youtube.com/watch?v=HYhDsx4lmis"><img src="https://img.youtube.com/vi/HYhDsx4lmis/0.jpg" alt="LGS Demo Video"></a>
 </div>
 <p>Direct Link: https://youtu.be/HYhDsx4lmis</p>
