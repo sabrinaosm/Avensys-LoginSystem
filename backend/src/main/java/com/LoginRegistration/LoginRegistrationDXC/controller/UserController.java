@@ -31,14 +31,13 @@ public class UserController {
     public ResponseEntity<String> register(@RequestBody User user) {
         boolean isUsernameExist = userService.isUsernameExists(user.getUsername());
         boolean isEmailExist = userService.isEmailExists(user.getEmail());
-        if (isUsernameExist) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Username is already in use. Please try another" +
-                    " username.");
-        };
-        if (isEmailExist) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Email is already in use. Please try another " +
-                    "username.");
-        };
+        if (isUsernameExist && isEmailExist) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Username and email are already in use. Please try different ones.");
+        } else if (isUsernameExist) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Username is already in use. Please try a different one.");
+        } else if (isEmailExist) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Email is already in use. Please try a different one.");
+        }
         userService.saveUser(user);
         return ResponseEntity.ok("User has successfully registered an account.");
     }

@@ -1,0 +1,16 @@
+.register-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.login-link {
+    color: black;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    text-decoration: none;
+    color: black;
+}

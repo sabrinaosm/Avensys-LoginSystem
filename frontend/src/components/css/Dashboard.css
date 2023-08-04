@@ -1,4 +1,48 @@
-h3 {
+h3, h2 {
     font-family: 'Unbounded', cursive;
     font-weight: 600;
+}
+
+.card {
+    border-radius: .7rem;
+    padding: 2rem;
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+table {
+    height: 70%;
+}
+
+th, td {
+    padding: .5rem;
+    text-align: center;
+}
+
+.edit, .view {
+    background-color: #B8F35C;
+    font-weight: bold;
+    border-radius: .7rem;
+    padding: .5rem;
+    border: none;
+    font-size: 13px;
+}
+
+.view {
+    background-color: #202020;
+    color: white;
+}
+
+.view:hover {
+    background-color: #2f2f2f;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+.edit:hover {
+    background-color: #c4f771;
+    transition: 1s ease;
+    cursor: pointer;
 }

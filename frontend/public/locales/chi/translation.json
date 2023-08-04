@@ -1,0 +1,122 @@
+{
+    "Home": {
+        "1": "家"
+    },
+    "Logout": {
+        "1": "登出"
+    },
+    "Login": {
+        "1": "登录"
+    },
+    "Register": {
+        "1": "登记"
+    },
+    "Username": {
+        "1": "用户名"
+    },
+    "First Name": {
+        "1": "名"
+    },
+    "Last Name": {
+        "1": "姓"
+    },
+    "Email": {
+        "1": "电子邮件"
+    },
+    "Gender": {
+        "1": "性别"
+    },
+    "Select Gender": {
+        "1": "选择性别"
+    },
+    "Female": {
+        "1": "女性"
+    },
+    "Male": {
+        "1": "男性"
+    },
+    "Password": {
+        "1": "密码"
+    },
+    "ID": {
+        "1": "ID"
+    },
+    "Actions": {
+        "1": "行动"
+    },
+    "Create an Account": {
+        "1": "创建一个帐户"
+    },
+    "Already have an account": {
+        "1": "已经有帐户？"
+    },
+    "Join the family": {
+        "1": "加入这个家庭吧！"
+    },
+    "Begin your journey here and enter your account details to create an account": {
+        "1": "从这里开始您的旅程并输入您的帐户详细信息以创建帐户！"
+    },
+    "Feel free to create an account login and test out the system": {
+        "1": "请随意创建一个帐户，登录并测试系统！"
+    },
+    "Welcome this is a login and registration system built using Java Springboot React.js and MySQL": {
+        "1": "欢迎这是一个使用 Java Springboot、React.js 和 MySQL 构建的登录和注册系统。"
+    },
+    "Click here to retrieve details of the super manager account for testing": {
+        "1": "单击此处检索超级管理员帐户的详细信息以进行测试。"
+    },
+    "Welcome back": {
+        "1": "欢迎回来！"
+    },
+    "Welcome to the Login Registration System Please enter your account details to begin": {
+        "1": "欢迎来到登录注册系统。请输入您的帐户详细信息以开始！"
+    },
+    "Dont have an account yet": {
+        "1": "还没有帐户？"
+    },
+    "Create an account here": {
+        "1": "在这里创建一个帐户。"
+    },
+    "Password cannot be empty": {
+        "1": "密码不能为空."
+    },
+    "Username cannot be empty": {
+        "1": "用户名不能为空."
+    },
+    "Invalid username and password": {
+        "1": "用户名和密码无效."
+    },
+    "User Information Card": {
+        "1": "用户信息卡"
+    },
+    "Full Name": {
+        "1": "全名"
+    },
+    "Role": {
+        "1": "角色"
+    },
+    "Welcome to LGS": {
+        "1": "欢迎来到LGS"
+    },
+    "Here you are able to view your account details and make changes to your account": {
+        "1": "在这里您可以查看您的帐户详细信息并对您的帐户进行更改。"
+    },
+    "Admin Panel": {
+        "1": "管理面板"
+    },
+    "Welcome to the Admin Panel here admins are able to manage user accounts": {
+        "1": "欢迎来到管理面板，管理员可以在这里管理用户帐户。"
+    },
+    "First Name cannot be empty": {
+        "1": "名字不能为空。"
+    },
+    "Last Name cannot be empty": {
+        "1": "姓氏不能为空。."
+    },
+    "Email cannot be empty": {
+        "1": "电子邮件不能为空。"
+    },
+    "Gender cannot be empty": {
+        "1": "性别不能为空。"
+    }
+}

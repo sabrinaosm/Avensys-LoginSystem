@@ -1,0 +1,26 @@
+.login-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.login-left {
+    width: 20%;;
+}
+
+.register-link {
+    font-weight: bold;
+    color: #202020;
+}
+
+.register-link:hover {
+    text-decoration: none;
+    color: #353535;
+    transition: 1s ease;
+}
+
+.btn {
+    width: 100%;
+}

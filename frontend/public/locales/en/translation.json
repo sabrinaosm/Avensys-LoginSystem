@@ -1,0 +1,122 @@
+{
+    "Home": {
+        "1": "Home"
+    },
+    "Logout": {
+        "1": "Logout"
+    },
+    "Login": {
+        "1": "Login"
+    },
+    "Register": {
+        "1": "Register"
+    },
+    "Username": {
+        "1": "Username"
+    },
+    "First Name": {
+        "1": "First Name"
+    },
+    "Last Name": {
+        "1": "Last Name"
+    },
+    "Email": {
+        "1": "Email"
+    },
+    "Gender": {
+        "1": "Gender"
+    },
+    "Select Gender": {
+        "1": "Select Gender"
+    },
+    "Female": {
+        "1": "Female"
+    },
+    "Male": {
+        "1": "Male"
+    },
+    "Password": {
+        "1": "Password"
+    },
+    "Actions": {
+        "1": "Actions"
+    },
+    "ID": {
+        "1": "ID"
+    },
+    "Create an Account": {
+        "1": "Create an Account"
+    },
+    "Already have an account": {
+        "1": "Already have and account?"
+    },
+    "Join the family": {
+        "1": "Join the family!"
+    },
+    "Begin your journey here and enter your account details to create an account": {
+        "1": "Begin your journey here and enter your account details to create an account."
+    },
+    "Feel free to create an account login and test out the system": {
+        "1": "Feel free to create an account, login and test out the system."
+    },
+    "Click here to retrieve details of the super manager account for testing": {
+        "1": "Click here to retrieve details of the super manager account for testing!"
+    },
+    "Welcome this is a login and registration system built using Java Springboot React.js and MySQL": {
+        "1": "Welcome, this is a login and registration system built using Java Springboot, React.js and MySQL!"
+    },
+    "Welcome back": {
+        "1": "Welcome back!"
+    },
+    "Welcome to the Login Registration System Please enter your account details to begin": {
+        "1": "Welcome to the Login Registration System! Please enter your account details to begin."
+    },
+    "Dont have an account yet": {
+        "1": "Don't have an account yet?"
+    },
+    "Create an account here": {
+        "1": "Create an account here!"
+    },
+    "Password cannot be empty": {
+        "1": "Password cannot be empty."
+    },
+    "Username cannot be empty": {
+        "1": "Username cannot be empty."
+    },
+    "Invalid username and password": {
+        "1": "Invalid username and password."
+    },
+    "User Information Card": {
+        "1": "User Information Card"
+    },
+    "Full Name": {
+        "1": "Full Name"
+    },
+    "Role": {
+        "1": "Role"
+    },
+    "Welcome to LGS": {
+        "1": "Welcome to LGS"
+    },
+    "Here you are able to view your account details and make changes to your account": {
+        "1": "Here, you are able to view your account details and make changes to your account."
+    },
+    "Admin Panel": {
+        "1": "Admin Panel"
+    },
+    "Welcome to the Admin Panel here admins are able to manage user accounts": {
+        "1": "Welcome to the Admin Panel, here admins are able to manage user accounts!"
+    },
+    "First Name cannot be empty": {
+        "1": "First Name cannot be empty."
+    },
+    "Last Name cannot be empty": {
+        "1": "Last Name cannot be empty."
+    },
+    "Email cannot be empty": {
+        "1": "Email cannot be empty."
+    },
+    "Gender cannot be empty": {
+        "1": "Gender cannot be empty."
+    }
+}

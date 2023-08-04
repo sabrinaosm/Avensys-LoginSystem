@@ -7,6 +7,12 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F2F2F2;
+  font-size: 13px;
+}
+
+input, input::placeholder {
+  font-size: 13px;
 }
 
 code {

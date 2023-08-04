@@ -1,0 +1,122 @@
+{
+    "Home": {
+        "1": "집"
+    },
+    "Logout": {
+        "1": "로그 아웃"
+    },
+    "Login": {
+        "1": "로그인"
+    },
+    "Register": {
+        "1": "등록하다"
+    },
+    "Username": {
+        "1": "사용자 이름"
+    },
+    "First Name": {
+        "1": "이름"
+    },
+    "Last Name": {
+        "1": "성"
+    },
+    "Email": {
+        "1": "이메일"
+    },
+    "Gender": {
+        "1": "성별"
+    },
+    "Select Gender": {
+        "1": "성별을 선택하세요"
+    },
+    "Female": {
+        "1": "여성"
+    },
+    "Male": {
+        "1": "남성"
+    },
+    "Password": {
+        "1": "비밀번호"
+    },
+    "ID": {
+        "1": "ID"
+    },
+    "Actions": {
+        "1": "행위"
+    },
+    "Create an Account": {
+        "1": "계정 만들기"
+    },
+    "Already have an account": {
+        "1": "이미 계정이 있습니다?"
+    },
+    "Join the family": {
+        "1": "가족과 함께하세요!"
+    },
+    "Begin your journey here and enter your account details to create an account": {
+        "1": "여기에서 여정을 시작하고 계정 세부 정보를 입력하여 계정을 만드십시오."
+    },
+    "Feel free to create an account login and test out the system": {
+        "1": "자유롭게 계정 로그인을 생성하고 시스템을 테스트하십시오."
+    },
+    "Welcome this is a login and registration system built using Java Springboot React.js and MySQL": {
+        "1": "환영합니다. 이것은 Java Springboot, React.js 및 MySQL을 사용하여 구축된 로그인 및 등록 시스템입니다!"
+    },
+    "Click here to retrieve details of the super manager account for testing": {
+        "1": "테스트를 위해 슈퍼 관리자 계정의 세부 정보를 검색하려면 여기를 클릭하십시오."
+    },
+    "Welcome back": {
+        "1": "다시 오신 것을 환영합니다!"
+    },
+    "Welcome to the Login Registration System Please enter your account details to begin": {
+        "1": "로그인 등록 시스템에 오신 것을 환영합니다! 시작하려면 계정 정보를 입력하십시오."
+    },
+    "Dont have an account yet": {
+        "1": "아직 계정이 없으신가요?"
+    },
+    "Create an account here": {
+        "1": "여기에서 계정을 만드세요!"
+    },
+    "Password cannot be empty": {
+        "1": "비밀번호는 비워둘 수 없습니다."
+    },
+    "Username cannot be empty": {
+        "1": "사용자 이름은 비워둘 수 없습니다."
+    },
+    "Invalid username and password": {
+        "1": "잘못된 사용자 이름과 비밀번호입니다."
+    },
+    "User Information Card": {
+        "1": "사용자 정보 카드"
+    },
+    "Full Name": {
+        "1": "전체 이름"
+    },
+    "Role": {
+        "1": "역할"
+    },
+    "Welcome to LGS": {
+        "1": "LGS에 오신 것을 환영합니다"
+    },
+    "Here you are able to view your account details and make changes to your account": {
+        "1": "여기에서 계정 세부 정보를 보고 계정을 변경할 수 있습니다."
+    },
+    "Admin Panel": {
+        "1": "관리자 패널"
+    },
+    "Welcome to the Admin Panel here admins are able to manage user accounts": {
+        "1": "관리자 패널에 오신 것을 환영합니다. 여기서 관리자는 사용자 계정을 관리할 수 있습니다!"
+    },
+    "First Name cannot be empty": {
+        "1": "이름은 비워둘 수 없습니다."
+    },
+    "Last Name cannot be empty": {
+        "1": "성은 비워둘 수 없습니다."
+    },
+    "Email cannot be empty": {
+        "1": "이메일은 비워둘 수 없습니다."
+    },
+    "Gender cannot be empty": {
+        "1": "성별은 비워둘 수 없습니다."
+    }
+}

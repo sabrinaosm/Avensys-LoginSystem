@@ -1,0 +1,9 @@
+.admin-body {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+table{
+    width: 100%;
+}
